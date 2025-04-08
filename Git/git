@@ -1,0 +1,8 @@
+Git is a distributed version control system and source code management system.
+That allows us to manage code efficiently and helps to create a track of it.
+
+git init- initializes a local git repo .git
+git add- add files to staging area
+git commit- commit files to commit area
+
+git remote add origin url - to add remote repo
