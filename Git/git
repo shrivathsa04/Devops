@@ -11,3 +11,5 @@ git fetch - it will fetch the file but will not add to the branches in local
 git pull -action of fetch and merge 
 
 git stash- it will hide if any file that are in the staging area to stash, this will help if any other commit has to be made
+
+git reset --soft HEAD~ - reset from commit to stage
