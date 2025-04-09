@@ -11,3 +11,5 @@ if we done any changes to same file in diffrent branches merge conflits will com
 
 git fetch - it will fetch the file but will not add to the branches in local
 git pull -action of fetch and merge
+
+git checkout -b name - will create and checkout to that branch
