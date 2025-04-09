@@ -10,7 +10,4 @@ git remote add origin url - to add remote repo
 if we done any changes to same file in diffrent branches merge conflits will come
 
 git fetch - it will fetch the file but will not add to the branches in local
-git pull -action of fetch and merge 
-
-git stash- it will hide if any file that are in the staging area to stash, this will help if any other commit has to be mad
-e
+git pull -action of fetch and merge
