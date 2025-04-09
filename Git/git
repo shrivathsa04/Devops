@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Git is a distributed version control system and source code management system.
 That allows us to manage code efficiently and helps to create a track of it.
 
@@ -10,4 +11,4 @@ git remote add origin url - to add remote repo
 if we done any changes to same file in diffrent branches merge conflits will come
 
 git fetch - it will fetch the file but will not add to the branches in local
-git pull -action of fetch and merge
+git pull -action of fetch and me
