@@ -1,0 +1,43 @@
+terraform provisioners
+3 types
+1. file
+1. file Provisioner
+Copies files or directories from the machine running Terraform to the remote resource.
+
+provisioner "file" {
+  source      = "script.sh"
+  destination = "/tmp/script.sh"
+}
+
+2. remote-exec Provisioner
+Runs commands on the remote machine.
+
+
+provisioner "remote-exec" {
+  inline = [
+    "sudo apt update",
+    "sudo apt install -y nginx"
+  ]
+}
+
+3. local-exec Provisioner
+Runs a command on the machine running Terraform, not on the remote resource.
+
+provisioner "local-exec" {
+  command = "echo ${self.public_ip} >> inventory.txt"
+}
+
+To configure s3 backend
+terraform {
+  backend "s3" {
+    bucket = "firstbucketshri1"
+    key = "path/to/my/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+
+terraform import 
+to import existing infra under terraform statefile
+command = terraform import resoucetype.resourcename instance id or bucket name
+to import a resouce block should be present with the resource name later we can fill the info using state file
+
