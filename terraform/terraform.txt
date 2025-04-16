@@ -14,18 +14,27 @@ terraform workspace select dev - this will checkout to dev workspace
 
 this workspace creation also creates a seperate state file for each workspaces
 
+Terraform state
+terraform state file helps to track and manage resources efficiently. It prevents duplication 
 
+Terraform module 
+terraform’s Module Registry is a public or private repository of reusable Terraform modules 
+that help standardize and simplify infrastructure deployment.
+It has a collection of pre built terraform modules
+Allows teams to reuse and share infrastructure code instead of writing everything from 
+scratch.
 
+Terraform lifecycle
+lifecycle allows to handle zero downtime for resources 
+ 
+create_before_destroy allows resources to create first and it will destroy previously created resource
 
+prevent_destroy allows to retrict deletion of that resource
 
-
-
-
-
-
-
-
-
+lifecycle {
+    create_before_destroy = true
+    prevent_destroy       = true
+  }
 
 
 
@@ -71,3 +80,5 @@ terraform import
 to import existing infra under terraform statefile
 command = terraform import resoucetype.resourcename instance id or bucket name
 to import a resouce block should be present with the resource name later we can fill the info using state file
+
+terraform state list- to list the state files
