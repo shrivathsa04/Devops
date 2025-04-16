@@ -1,3 +1,26 @@
+Terraform is a open source infrastructure as a code (IOC) tool used to manage, define infrastrucure for cloud providers.
+
+Terraform workflow
+we write the configuration file then initializes the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 terraform provisioners
 3 types
 1. file
@@ -40,4 +63,3 @@ terraform import
 to import existing infra under terraform statefile
 command = terraform import resoucetype.resourcename instance id or bucket name
 to import a resouce block should be present with the resource name later we can fill the info using state file
-
