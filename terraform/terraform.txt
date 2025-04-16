@@ -1,10 +1,18 @@
 Terraform is a open source infrastructure as a code (IOC) tool used to manage, define infrastrucure for cloud providers.
 
 Terraform workflow
-we write the configuration file then initializes the 
+we write the configuration file then install the dependencies by running terraform init command
 
+terraform plan shows execution plan before going to apply
 
+terraform apply command creates the resources in the cloud providers , it also creates the state file to track the resources created
 
+Terraform workspaces
+If we want to use the same terraform code for different environment like dev stage prod we can achieve it by using workspaces
+Ex: terraform workspace new dev - this will create workspace dev
+terraform workspace select dev - this will checkout to dev workspace 
+
+this workspace creation also creates a seperate state file for each workspaces
 
 
 
