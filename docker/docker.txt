@@ -10,3 +10,29 @@ Docker architecture involves
     6. Docker volumes: persist and share data between containers
     7. Docker networks: allows communication between containers and the outside of the containers
 
+Dockerfile
+From - used to define docker images
+copy - used to copy files from source to destination (local to container)
+ADD- same as copy but it can extracts contantes of .tar files to inside the container
+CMD- command or arguments that run when container starts, it can be override
+ENTRYPOINT- fixed command that runs when the container starts, we can't override
+RUN- is used at the build time to update packages
+
+Ex: # Base image
+FROM python:3.10-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy the Python script into the image
+COPY app.py .
+
+# Install any needed packages (example of RUN)
+RUN pip install --no-cache-dir requests
+
+# Set the main command to run
+ENTRYPOINT ["python3"]
+
+# Set the default argument
+CMD ["app.py"]
+
