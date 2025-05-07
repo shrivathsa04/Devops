@@ -1,0 +1,12 @@
+Docker is a client server architechure that allows us to build ,deploy and run 
+application in a containerized system.
+
+Docker architecture involves 
+    1. Docker client : it is a command line tool used to interact with docker. It communicates with docker daemon using rest API.
+    2. Docker daemon: It listens API requests from client and builds, run and manages docker images and containers.
+    3. docker images: Read only templates used to create containers.
+    4. Docker containers: Runnning instances of docker images
+    5. Docker registries: centralized repo for storing the images. Docker hub is the default public registry.
+    6. Docker volumes: persist and share data between containers
+    7. Docker networks: allows communication between containers and the outside of the containers
+
